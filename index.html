@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Carlos Paredes</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <meta name="description" content="Hi, Im Carlos Paredes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Carlos Paredes Personal Site">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.6/lib/typed.min.js"></script>
+</head>
+
+<body>
+  <div class="d-flex align-items-center min-vh-100">
+    <div class="container text-center">
+      <div class="container">
+        <div class="col-sm" />
+        <div class="col-md-12">
+          <div class="jumbotron w-auto">
+            <h1 class="display-2 text-center"> ⚙ <span id='name'> </span> ⚙</h1>
+            <br/>
+            <h3 class="text-center"> 📖 Engineering Student @ Pontificia Universidad Catolica de Chile </h3>
+            <br/>
+            <h3 class="text-center"> 👨‍💻 CEO & Co-founder @ Dynaptics Labs </h3>
+            <br/>
+            <h4 class='text-center' id='fib'></h4> 
+            <br/>
+            <div class="container">
+            <div class="row">
+              <div class="col-sm text-center">
+                <p> 🖥 Github: <a href='https://github.com/CarloGauss33'>CarloGauss33</a> </p>
+              </div>
+              <div class="col-sm text-center">
+                <p> 📱  LinkedIn: <a href='https://www.linkedin.com/in/carlos-paredes-robles-67ba17159/'> Carlos Paredes </a> </p>
+              </div>
+              <div class="col-sm text-center">
+                <p> 📧 <a href='mailto:cparedesr@uc.cl'> cparedesr@uc.cl </a> </p>
+              </div>
+            </div>
+            </div>
+            <br/>
+            <button class='btn btn-outline-primary' onclick=generateNewFib()> Generar Nuevo Numero</button>
+            <br/>
+            <a class='btn btn-outline-primary' href='https://blog.cparedesr.me'> Ir al Blog</a>
+          </div>
+        </div>
+        <div class="col-sm" />
+      </div>
+    </div>
+  </div>
+    
+    
+    
+    <script>
+    var text = ["", "Im Carlos", "Carlos Paredes"];
+    var typed = new Typed("#name", {
+        strings: text,
+        showCursor: true,
+        cursorChar: '_',
+        typeSpeed: 90,
+        backDelay: 900,
+        backSpeed: 30,
+    });
+
+    var number = Math.floor(Math.random()*1000) % 200; 
+
+    var memoization = new Array();
+    memoization[0] = 0;
+    memoization[1] = 1;
+    memoization[2] = 1;
+    function fib(n){
+      if (memoization[n] != undefined){
+        return memoization[n];
+      }
+
+      memoization[n] = fib(n-1) + fib(n-2)
+      return memoization[n];
+    };
+
+    $(document).ready(function() {
+      $("#fib").text("Your lucky number is the " + number + "th fibbonacci: " + fib(number+1));
+      });
+
+    function generateNewFib(){
+      number = Math.floor(Math.random()*1000) % 200;
+      $(document).ready(function() {
+      $("#fib").text("Your lucky number is the " + number + "th fibbonacci: " + fib(number+1));
+      });
+    }
+
+    </script>
+</body>
+</html>
