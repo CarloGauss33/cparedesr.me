@@ -29,7 +29,7 @@
         <div class="col-md-12">
           <div class="jumbotron w-auto">
             <br/>
-            <h1 class="display-2 text-center" id="title"> <span id='name'> </span> </h1>
+            <h1 class="display-2 text-center" id="title">‏‏‎ ‎<span id='name'>‏</span> </h1>
             <br/>
             <h3 class="text-center"> 📖 Engineering Student @ Pontificia Universidad Catolica de Chile </h3>
             <br/>
@@ -64,7 +64,7 @@
     
     
     <script>
-    var text = ["    ", "Im Carlos", "Carlos Paredes"];
+    var text = ["    ", "Im Carlos‏‏‎", "Carlos Paredes‏‏‎"];
     var typed = new Typed("#name", {
         strings: text,
         showCursor: true,
@@ -90,13 +90,13 @@
     };
 
     $(document).ready(function() {
-      $("#fib").text("Your lucky number is the " + number + "th fibbonacci: " + fib(number+1));
+      $("#fib").text("Your lucky number is the " + (number+1) + "th fibbonacci: " + fib(number+1));
       });
 
     function generateNewFib(){
       number = Math.floor(Math.random()*1000) % 120;
       $(document).ready(function() {
-      $("#fib").text("Your lucky number is the " + number + "th fibbonacci: " + fib(number+1));
+      $("#fib").text("Your lucky number is the " + (number+1) + "th fibbonacci: " + fib(number+1));
       });
     }
 
