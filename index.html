@@ -28,7 +28,8 @@
         <div class="col-sm" />
         <div class="col-md-12">
           <div class="jumbotron w-auto">
-            <h1 class="display-2 text-center"> ⚙ <span id='name'> </span> ⚙</h1>
+            <br/>
+            <h1 class="display-2 text-center" id="title"> <span id='name'> </span> </h1>
             <br/>
             <h3 class="text-center"> 📖 Engineering Student @ Pontificia Universidad Catolica de Chile </h3>
             <br/>
@@ -50,9 +51,9 @@
             </div>
             </div>
             <br/>
-            <button class='btn btn-outline-primary' onclick=generateNewFib()> Generar Nuevo Numero</button>
+            <button class='btn btn-dark btn-lg btn-block' onclick=generateNewFib()> Generar Nuevo Numero</button>
             <br/>
-            <a class='btn btn-outline-primary' href='https://blog.cparedesr.me'> Ir al Blog</a>
+            <a class='btn btn-dark btn-lg btn-block' href='https://blog.cparedesr.me'> Ir al Blog</a>
           </div>
         </div>
         <div class="col-sm" />
@@ -63,17 +64,17 @@
     
     
     <script>
-    var text = ["", "Im Carlos", "Carlos Paredes"];
+    var text = ["    ", "Im Carlos", "Carlos Paredes"];
     var typed = new Typed("#name", {
         strings: text,
         showCursor: true,
-        cursorChar: '_',
+        cursorChar: '',
         typeSpeed: 90,
         backDelay: 900,
         backSpeed: 30,
     });
 
-    var number = Math.floor(Math.random()*1000) % 200; 
+    var number = Math.floor(Math.random()*1000) % 120; 
 
     var memoization = new Array();
     memoization[0] = 0;
@@ -93,7 +94,7 @@
       });
 
     function generateNewFib(){
-      number = Math.floor(Math.random()*1000) % 200;
+      number = Math.floor(Math.random()*1000) % 120;
       $(document).ready(function() {
       $("#fib").text("Your lucky number is the " + number + "th fibbonacci: " + fib(number+1));
       });

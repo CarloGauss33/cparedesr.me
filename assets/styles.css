@@ -1,3 +1,8 @@
 body {
     background-color: #8889ca;
 }
+
+#title {
+    font-size:3.6rem;
+    font-weight:bold;
+}
