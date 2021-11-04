@@ -6,3 +6,16 @@ body {
     font-size:3.6rem;
     font-weight:bold;
 }
+
+/* For Mobile Landscape View */
+@media screen
+  and (max-device-width: 480px)
+  and (orientation: portrait){
+    .jumbotron {
+        background-color: rgb(170, 187, 240);
+    }    
+    body {
+        background-color: rgb(170, 187, 240);
+    }
+    
+}

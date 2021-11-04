@@ -36,6 +36,7 @@
             <h3 class="text-center"> 👨‍💻 CEO & Co-founder @ Dynaptics Labs </h3>
             <br/>
             <h4 class='text-center' id='fib'></h4> 
+            <h4 class='text-center' id='fibvalue'></h4> 
             <br/>
             <div class="container">
             <div class="row">
@@ -90,13 +91,16 @@
     };
 
     $(document).ready(function() {
-      $("#fib").text("Your lucky number is the " + (number+1) + "th fibbonacci: " + fib(number+1));
+      $("#fib").text("Your lucky number is the " + (number+1) + "th fibbonacci: ");
+      $("#fibvalue").text(fib(number+1));
+      
       });
 
     function generateNewFib(){
       number = Math.floor(Math.random()*1000) % 120;
       $(document).ready(function() {
-      $("#fib").text("Your lucky number is the " + (number+1) + "th fibbonacci: " + fib(number+1));
+        $("#fib").text("Your lucky number is the " + (number+1) + "th fibbonacci: ");
+        $("#fibvalue").text(fib(number+1));
       });
     }
 
