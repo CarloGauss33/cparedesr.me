@@ -12,10 +12,10 @@ body {
   and (max-device-width: 480px)
   and (orientation: portrait){
     .jumbotron {
-        background-color: rgb(170, 187, 240);
+        background-color: rgb(215, 225, 255);
     }    
     body {
-        background-color: rgb(170, 187, 240);
+        background-color: rgb(215, 225, 255);
     }
     
 }
