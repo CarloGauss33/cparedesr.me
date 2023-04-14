@@ -55,9 +55,16 @@ const contact = {
           Also I'm a student at Pontificia Universidad Católica de Chile where I'm currently leading the team for the course
           IIC2133 - Data Structures and Algorithms.
         </p>
-        <div class="p-2 flex">
-          <a href="/selfhosted" class="bg-yellow-400 mx-auto text-white px-4 py-2 rounded-lg shadow-lg hover:bg-purple-500">
-              Some of my selfhosted projects
+        <div class="p-2 flex flex-col justify-start items-start w-full gap-2">
+          <h3 class="text-gray-800 text-sm md:text-base font-bold mr-2">Some of my projects (Check out github for more):</h3>
+          <a href="https://scan.cparedesr.com" class="bg-purple-400 w-full text-white px-4 py-2 rounded-lg shadow-lg hover:bg-yellow-500">
+              ExamScanner - PDF Generator
+          </a>
+          <a href="https://pdf.cparedesr.com" class="bg-purple-400 w-full text-white px-4 py-2 rounded-lg shadow-lg hover:bg-yellow-500">
+              CPDF - PDF editor
+          </a>
+          <a href="https://draw.cparedesr.com/" class="bg-purple-400 w-full text-white px-4 py-2 rounded-lg shadow-lg hover:bg-yellow-500">
+              Draw - Excalidraw without tracking
           </a>
         </div>
         <p class="text-gray-800 text-justify text-sm md:text-left">
