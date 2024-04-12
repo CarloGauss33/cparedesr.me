@@ -44,7 +44,7 @@ const contact = {
       <div class="flex flex-col gap-2">
         <p class="text-gray-800 text-justify md:text-left">
           I'm a engineer from Chile, Bitcoin Maximalist and Cypherpunk.
-          Currently working at <a href="https://www.grupomok.com/" class="font-bold text-rose-700">MOK Labs</a> as a Senior Software Engineer.
+          Currently working at <a href="https://www.grupomok.com/" class="font-bold text-rose-700">MOK Labs</a> as a SSE and Tech Lead.
         </p>
         <p class="text-gray-800 text-justify md:text-left">
           Additionally, I am a student at the Pontificia Universidad Católica de Chile, where I currently lead the team for the course
